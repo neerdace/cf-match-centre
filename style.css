@@ -1,1 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1E2945;
+    color: #b0abba;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 10px;
+}
+nav div{
+    background-color: #1E2945;
+}
+ nav p{
+    background-color: #1E2945;
+    margin-left: -150px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1E2945;
+    font-size: 16px;
+    font-weight: 500;
+}
+nav ul li{
+    list-style: none;
+    background-color: #1E2945;
+    letter-spacing: 1;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li a{
+    background-color: #1E2945;
+    text-decoration: none;
+    color: #fff;
+}
+.tabs {
+    display: flex;
+    margin: 20px;
+    max-width: 800px;
+    margin-left: 100px;
+}
 
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #1e294586;
+    color: white;
+    border: 1px solid #ccc;
+    max-width: 800px;
+}
+
+.tab-content {
+    display: none;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 790px;
+    margin-left: 100px;
+}
+.active-tab {
+    background-color: #1E2945;
+    color: white;
+}
+#inning1 {
+    display: block;
+}
+.top-matchinfo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 250px;
+    margin: 8px;
+}
+.match-details{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin:50px auto 40px 100px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #1E2945;
+}
+
+.match-info {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px 10px 0 0;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+}
+.match-info, .match-info span, .match-info span a{
+    text-decoration: none;
+    background-color: beige;
+    color: #1E2945;
+}
+.live{
+color: red;
+font-size: 12px;
+font-weight: bold;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.team img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.team-name {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.score {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: auto;
+}
+
+.overs{
+    font-size: 14px;
+    font-weight: 400;
+    color: #302f2f;
+    margin-right: 8px;
+}
+.result {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #d3d3d3;
+    border-bottom: green 5px solid;
+    border-radius: 0 0 10px 10px;
+}
+.post-result{
+    color: rgb(2, 52, 2);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #e8e6e6;
+    border-bottom: green 5px solid;
+    border-radius: 0 0 10px 10px;
+}
+table {
+    max-width: 790px;
+    background-color: #1E2945;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #1E2945;
+    color: white;
+}
+.table-gap{
+    margin-bottom: 30px;
+}
+.cf-font-bold{
+    font-weight: 700;
+}
+td, i{
+    background-color: #b0abba;
+}
+.innings{
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
