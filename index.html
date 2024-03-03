@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>CricFeed Nepal</title>
+    <title>Cricket Match Details</title>
     <style>
         body {
             font-family: Poppins, sans-serif;
@@ -24,13 +24,14 @@
     font-weight: 800;
     padding: 10px;
     height: 40px;
+    margin-bottom: 30px;
 }
 nav div{
     background-color: #1E2945;
 }
- nav p{
+ nav span{
     background-color: #1E2945;
-    margin-left: -150px;
+    margin-left: -120px;
 }
 nav ul{
     display: flex;
@@ -113,92 +114,412 @@ nav ul li a{
             background-color: #4caf50;
           left-margin: 20px;
         }
+        .fixture{
+            font-size: 20px;
+            padding: 8px;
+            background-color: #b0abba;
+            color: #1E2945;
+            text-align: center;
+            font-weight: 500;
+        }
+        .upcoming{
+            font-size: 20px;
+            padding: 8px;
+            background-color: #b0abba;
+            color: #1E2945;
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .cf-matchcard-list{
+            display: flex;
+            justify-content: space-evenly;
+            border: 2px #1e2945 solid;
+            border-radius: 10px;
+            box-shadow: 2px 2px #00000062;
+            width: 95%;
+            margin: 13px auto;
+            padding: 5px;
+        }
+        .tour-section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+        .tour-section span{
+            font-size: 10px;
+            font-weight: 500;
+            text-align: left;
+        }
+        .tour-section img{
+            width: 50px;
+            padding: 5px;
+        }
+        .mid-team{
+            padding: 8px;
+            border-left: 1px #1e2945 solid;
+            border-right: 1px #1e2945 solid;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            width: 40%;
+        }
+        .mid-score{
+            display: flex;
+            justify-content: space-between;
+        }
+        .mid-score img{
+            width: 40px;
+            margin-right: 20px;
+        }
+        .match-centre{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            height: auto;
+        }
+        .match-centre a{
+            border: #1e2945 2px solid;
+            text-decoration: none;
+            padding: 8px;
+            color: #1e2945;
+            font-weight: 500;
+            border-radius: 20px;
+
+        }
+        .date{
+            padding: 8px;
+            background-color: #1E2945;
+            color: #f5f5f5 ;
+            font-weight: 600;
+            text-align: center;
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="nav-left"><p>CricFeed Nepal</p></div>
+            <div class="nav-left"><span>CricFeed Nepal</span></div>
             <div class="nav-right">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Home</a></li>
                     <li><a href="">Live Match</a></li>
                     <li><a href="">Fixtures</a></li>
-                    <li><a href="">Result</a></li>
-                    <li><a href="">Tournaments</a></li>
+                    <li><a href="">Results</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-<div class="top-matchinfo">
-<div class="match-details">
-    <div class="match-info">
-      <span class="live">Live</span>&nbsp;•&nbsp;
-      <span>Match 5</span>&nbsp;•&nbsp;<span>ODI</span>&nbsp;•&nbsp;<span>TU International Cricket Ground&nbsp;•&nbsp;Kritipur</span>
-    </div>
-    <div class="team">
-        <img src="https://cricketnepal.org.np/wp-content/uploads/2020/09/canLogoUpdated-1980x1980.png" alt="Team 1 Logo">
-        <div class="team-name">Nepal</div>
-        <div class="score">200/5</div>
-    </div>
-    <div class="team">
-        <img src="https://www.kncb.nl/images/logos/logo-kncb.png" alt="Team 2 Logo">
-        <div class="team-name">Netherlands</div>
-        <div class="score">180/8</div>
-    </div>
-    <div class="result">Team 1 won by 20 runs</div>
-</div>
-  <div class="match-details">
-    <div class="match-info">
-      <span class="live">Live</span>&nbsp;•&nbsp;
-      <span>Match 5</span>&nbsp;•&nbsp;<span>ODI</span>&nbsp;•&nbsp;<span>TU International Cricket Ground&nbsp;•&nbsp;Kritipur</span>
-    </div>
-    <div class="team">
-        <img src="https://cricketnepal.org.np/wp-content/uploads/2020/09/canLogoUpdated-1980x1980.png" alt="Team 1 Logo">
-        <div class="team-name">Nepal</div>
-        <div class="score">200/5</div>
-    </div>
-    <div class="team">
-        <img src="https://www.kncb.nl/images/logos/logo-kncb.png" alt="Team 2 Logo">
-        <div class="team-name">Netherlands</div>
-        <div class="score">180/8</div>
-    </div>
-    <div class="result">Team 1 won by 20 runs</div>
-</div><div class="match-details">
-    <div class="match-info">
-      <span class="live">Live</span>&nbsp;•&nbsp;
-      <span>Match 5</span>&nbsp;•&nbsp;<span>ODI</span>&nbsp;•&nbsp;<span>TU International Cricket Ground&nbsp;•&nbsp;Kritipur</span>
-    </div>
-    <div class="team">
-        <img src="https://cricketnepal.org.np/wp-content/uploads/2020/09/canLogoUpdated-1980x1980.png" alt="Team 1 Logo">
-        <div class="team-name">Nepal</div>
-        <div class="score">200/5</div>
-    </div>
-    <div class="team">
-        <img src="https://www.kncb.nl/images/logos/logo-kncb.png" alt="Team 2 Logo">
-        <div class="team-name">Netherlands</div>
-        <div class="score">180/8</div>
-    </div>
-    <div class="result">Team 1 won by 20 runs</div>
-</div><div class="match-details">
-    <div class="match-info">
-      <span class="live">Live</span>&nbsp;•&nbsp;
-      <span>Match 5</span>&nbsp;•&nbsp;<span>ODI</span>&nbsp;•&nbsp;<span>TU International Cricket Ground&nbsp;•&nbsp;Kritipur</span>
-    </div>
-    <div class="team">
-        <img src="https://cricketnepal.org.np/wp-content/uploads/2020/09/canLogoUpdated-1980x1980.png" alt="Team 1 Logo">
-        <div class="team-name">Nepal</div>
-        <div class="score">200/5</div>
-    </div>
-    <div class="team">
-        <img src="https://www.kncb.nl/images/logos/logo-kncb.png" alt="Team 2 Logo">
-        <div class="team-name">Netherlands</div>
-        <div class="score">180/8</div>
-    </div>
+    <div class="fixture">Last Results</div>
+    <div class="top-matchinfo">
+        <div class="match-details">
+            <div class="match-info">
+                <span class="live">Live</span>&nbsp;•&nbsp;
+                <span>Match 5</span>&nbsp;•&nbsp;<span>ODI</span>&nbsp;•&nbsp;<span>TU International Cricket Ground&nbsp;•&nbsp;Kritipur</span>
+            </div>
+            <div class="team">
+                <img src="https://cricketnepal.org.np/wp-content/uploads/2020/09/canLogoUpdated-1980x1980.png" alt="Team 1 Logo">
+                <div class="team-name">Nepal</div>
+                <div class="score">200/5</div>
+            </div>
+            <div class="team">
+                <img src="https://www.kncb.nl/images/logos/logo-kncb.png" alt="Team 2 Logo">
+                <div class="team-name">Netherlands</div>
+                <div class="score">180/8</div>
+            </div>
+            <div class="result">Team 1 won by 20 runs</div>
+        </div>
+        <div class="match-details">
+            <div class="match-info">
+            <span class="live">Live</span>&nbsp;•&nbsp;
+            <span>Match 5</span>&nbsp;•&nbsp;<span>ODI</span>&nbsp;•&nbsp;<span>TU International Cricket Ground&nbsp;•&nbsp;Kritipur</span>
+            </div>
+            <div class="team">
+                <img src="https://cricketnepal.org.np/wp-content/uploads/2020/09/canLogoUpdated-1980x1980.png" alt="Team 1 Logo">
+                <div class="team-name">Nepal</div>
+                <div class="score">200/5</div>
+            </div>
+            <div class="team">
+                <img src="https://www.kncb.nl/images/logos/logo-kncb.png" alt="Team 2 Logo">
+                <div class="team-name">Netherlands</div>
+                <div class="score">180/8</div>
+            </div>
+            <div class="result">Team 1 won by 20 runs</div>
+        </div>
+        <div class="match-details">
+            <div class="match-info">
+            <span class="live">Live</span>&nbsp;•&nbsp;
+            <span>Match 5</span>&nbsp;•&nbsp;<span>ODI</span>&nbsp;•&nbsp;<span>TU International Cricket Ground&nbsp;•&nbsp;Kritipur</span>
+        </div>
+        <div class="team">
+            <img src="https://cricketnepal.org.np/wp-content/uploads/2020/09/canLogoUpdated-1980x1980.png" alt="Team 1 Logo">
+            <div class="team-name">Nepal</div>
+            <div class="score">200/5</div>
+        </div>
+        <div class="team">
+            <img src="https://www.kncb.nl/images/logos/logo-kncb.png" alt="Team 2 Logo">
+            <div class="team-name">Netherlands</div>
+            <div class="score">180/8</div>
+        </div>
+        <div class="result">Team 1 won by 20 runs</div>
+        </div>
+        <div class="match-details">
+        <div class="match-info">
+        <span class="live">Live</span>&nbsp;•&nbsp;
+        <span>Match 5</span>&nbsp;•&nbsp;<span>ODI</span>&nbsp;•&nbsp;<span>TU International Cricket Ground&nbsp;•&nbsp;Kritipur</span>
+        </div>
+        <div class="team">
+            <img src="https://cricketnepal.org.np/wp-content/uploads/2020/09/canLogoUpdated-1980x1980.png" alt="Team 1 Logo">
+            <div class="team-name">Nepal</div>
+            <div class="score">200/5</div>
+        </div>
+        <div class="team">
+            <img src="https://www.kncb.nl/images/logos/logo-kncb.png" alt="Team 2 Logo">
+            <div class="team-name">Netherlands</div>
+            <div class="score">180/8</div>
+        </div>
     <div class="result">Team 1 won by 20 runs</div>
 </div>
 </div>
 <div>
+    
+<div class="upcoming">Upcoming Match</div>
+<div class="date">March 2</div>
+<div class="cf-matchcard-list">
+    <div class="tour-section">
+        <span class="match-type t20i">ODI</span>
+        <img src="CWC_League2_logo.png" alt="Logo">
+        <span>ICC Cricket World Cup League 2</span>
+        <span>Tribhuvan University International Cricket Ground, Kritipur</span>
+    </div>
+    <div class="mid-team">
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/319900/319958.png" alt="Team 1 Logo">
+            <div class="team-name">Nepal</div>
+            <div class="score"><span class="overs">(18.5)</span><span class="runs">186</span></div>
+        </div>
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313136.logo.png" alt="Team 2 Logo">
+            <div class="team-name">Netherlands</div>
+        <div class="score"><span class="overs">(20)</span><span class="runs">206/4</span></div>
+        </div>
+    </div>
+    <div class="match-centre"><a href="#">Match Centre</a></div>
+</div>
+<div class="cf-matchcard-list">
+    <div class="tour-section">
+        <span class="match-type t20i">ODI</span>
+        <img src="CWC_League2_logo.png" alt="Logo">
+        <span>ICC Cricket World Cup League 2</span>
+        <span>Tribhuvan University International Cricket Ground, Kritipur</span>
+    </div>
+    <div class="mid-team">
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/319900/319958.png" alt="Team 1 Logo">
+            <div class="team-name">Nepal</div>
+            <div class="score"><span class="overs">(18.5)</span><span class="runs">186</span></div>
+        </div>
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313136.logo.png" alt="Team 2 Logo">
+            <div class="team-name">Netherlands</div>
+        <div class="score"><span class="overs">(20)</span><span class="runs">206/4</span></div>
+        </div>
+    </div>
+    <div class="match-centre"><a href="#">Match Centre</a></div>
+</div>
+<div class="cf-matchcard-list">
+    <div class="tour-section">
+        <span class="match-type t20i">ODI</span>
+        <img src="CWC_League2_logo.png" alt="Logo">
+        <span>ICC Cricket World Cup League 2</span>
+        <span>Tribhuvan University International Cricket Ground, Kritipur</span>
+    </div>
+    <div class="mid-team">
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/319900/319958.png" alt="Team 1 Logo">
+            <div class="team-name">Nepal</div>
+            <div class="score"><span class="overs">(18.5)</span><span class="runs">186</span></div>
+        </div>
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313136.logo.png" alt="Team 2 Logo">
+            <div class="team-name">Netherlands</div>
+        <div class="score"><span class="overs">(20)</span><span class="runs">206/4</span></div>
+        </div>
+    </div>
+    <div class="match-centre"><a href="#">Match Centre</a></div>
+</div>
+<div class="cf-matchcard-list">
+    <div class="tour-section">
+        <span class="match-type t20i">ODI</span>
+        <img src="CWC_League2_logo.png" alt="Logo">
+        <span>ICC Cricket World Cup League 2</span>
+        <span>Tribhuvan University International Cricket Ground, Kritipur</span>
+    </div>
+    <div class="mid-team">
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/319900/319958.png" alt="Team 1 Logo">
+            <div class="team-name">Nepal</div>
+            <div class="score"><span class="overs">(18.5)</span><span class="runs">186</span></div>
+        </div>
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313136.logo.png" alt="Team 2 Logo">
+            <div class="team-name">Netherlands</div>
+        <div class="score"><span class="overs">(20)</span><span class="runs">206/4</span></div>
+        </div>
+    </div>
+    <div class="match-centre"><a href="#">Match Centre</a></div>
+</div>
+<div class="date">March 3</div>
+<div class="cf-matchcard-list">
+    <div class="tour-section">
+        <span class="match-type t20i">ODI</span>
+        <img src="CWC_League2_logo.png" alt="Logo">
+        <span>ICC Cricket World Cup League 2</span>
+        <span>Tribhuvan University International Cricket Ground, Kritipur</span>
+    </div>
+    <div class="mid-team">
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/319900/319958.png" alt="Team 1 Logo">
+            <div class="team-name">Nepal</div>
+            <div class="score"><span class="overs">(18.5)</span><span class="runs">186</span></div>
+        </div>
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313136.logo.png" alt="Team 2 Logo">
+            <div class="team-name">Netherlands</div>
+        <div class="score"><span class="overs">(20)</span><span class="runs">206/4</span></div>
+        </div>
+    </div>
+    <div class="match-centre"><a href="#">Match Centre</a></div>
+</div>
+<div class="cf-matchcard-list">
+    <div class="tour-section">
+        <span class="match-type t20i">ODI</span>
+        <img src="CWC_League2_logo.png" alt="Logo">
+        <span>ICC Cricket World Cup League 2</span>
+        <span>Tribhuvan University International Cricket Ground, Kritipur</span>
+    </div>
+    <div class="mid-team">
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/319900/319958.png" alt="Team 1 Logo">
+            <div class="team-name">Nepal</div>
+            <div class="score"><span class="overs">(18.5)</span><span class="runs">186</span></div>
+        </div>
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313136.logo.png" alt="Team 2 Logo">
+            <div class="team-name">Netherlands</div>
+        <div class="score"><span class="overs">(20)</span><span class="runs">206/4</span></div>
+        </div>
+    </div>
+    <div class="match-centre"><a href="#">Match Centre</a></div>
+</div>
+<div class="date">March 4</div>
+<div class="cf-matchcard-list">
+    <div class="tour-section">
+        <span class="match-type t20i">ODI</span>
+        <img src="CWC_League2_logo.png" alt="Logo">
+        <span>ICC Cricket World Cup League 2</span>
+        <span>Tribhuvan University International Cricket Ground, Kritipur</span>
+    </div>
+    <div class="mid-team">
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/319900/319958.png" alt="Team 1 Logo">
+            <div class="team-name">Nepal</div>
+            <div class="score"><span class="overs">(18.5)</span><span class="runs">186</span></div>
+        </div>
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313136.logo.png" alt="Team 2 Logo">
+            <div class="team-name">Netherlands</div>
+        <div class="score"><span class="overs">(20)</span><span class="runs">206/4</span></div>
+        </div>
+    </div>
+    <div class="match-centre"><a href="#">Match Centre</a></div>
+</div>
+<div class="cf-matchcard-list">
+    <div class="tour-section">
+        <span class="match-type t20i">ODI</span>
+        <img src="CWC_League2_logo.png" alt="Logo">
+        <span>ICC Cricket World Cup League 2</span>
+        <span>Tribhuvan University International Cricket Ground, Kritipur</span>
+    </div>
+    <div class="mid-team">
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/319900/319958.png" alt="Team 1 Logo">
+            <div class="team-name">Nepal</div>
+            <div class="score"><span class="overs">(18.5)</span><span class="runs">186</span></div>
+        </div>
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313136.logo.png" alt="Team 2 Logo">
+            <div class="team-name">Netherlands</div>
+        <div class="score"><span class="overs">(20)</span><span class="runs">206/4</span></div>
+        </div>
+    </div>
+    <div class="match-centre"><a href="#">Match Centre</a></div>
+</div>
+<div class="cf-matchcard-list">
+    <div class="tour-section">
+        <span class="match-type t20i">ODI</span>
+        <img src="CWC_League2_logo.png" alt="Logo">
+        <span>ICC Cricket World Cup League 2</span>
+        <span>Tribhuvan University International Cricket Ground, Kritipur</span>
+    </div>
+    <div class="mid-team">
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/319900/319958.png" alt="Team 1 Logo">
+            <div class="team-name">Nepal</div>
+            <div class="score"><span class="overs">(18.5)</span><span class="runs">186</span></div>
+        </div>
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313136.logo.png" alt="Team 2 Logo">
+            <div class="team-name">Netherlands</div>
+        <div class="score"><span class="overs">(20)</span><span class="runs">206/4</span></div>
+        </div>
+    </div>
+    <div class="match-centre"><a href="#">Match Centre</a></div>
+</div>
+<div class="cf-matchcard-list">
+    <div class="tour-section">
+        <span class="match-type t20i">ODI</span>
+        <img src="CWC_League2_logo.png" alt="Logo">
+        <span>ICC Cricket World Cup League 2</span>
+        <span>Tribhuvan University International Cricket Ground, Kritipur</span>
+    </div>
+    <div class="mid-team">
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/319900/319958.png" alt="Team 1 Logo">
+            <div class="team-name">Nepal</div>
+            <div class="score"><span class="overs">(18.5)</span><span class="runs">186</span></div>
+        </div>
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313136.logo.png" alt="Team 2 Logo">
+            <div class="team-name">Netherlands</div>
+        <div class="score"><span class="overs">(20)</span><span class="runs">206/4</span></div>
+        </div>
+    </div>
+    <div class="match-centre"><a href="#">Match Centre</a></div>
+</div>
+<div class="cf-matchcard-list">
+    <div class="tour-section">
+        <span class="match-type t20i">ODI</span>
+        <img src="CWC_League2_logo.png" alt="Logo">
+        <span>ICC Cricket World Cup League 2</span>
+        <span>Tribhuvan University International Cricket Ground, Kritipur</span>
+    </div>
+    <div class="mid-team">
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/319900/319958.png" alt="Team 1 Logo">
+            <div class="team-name">Nepal</div>
+            <div class="score"><span class="overs">(18.5)</span><span class="runs">186</span></div>
+        </div>
+        <div class="mid-score">
+            <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313136.logo.png" alt="Team 2 Logo">
+            <div class="team-name">Netherlands</div>
+        <div class="score"><span class="overs">(20)</span><span class="runs">206/4</span></div>
+        </div>
+    </div>
+    <div class="match-centre"><a href="#">Match Centre</a></div>
+</div>
     
 </div>
 
