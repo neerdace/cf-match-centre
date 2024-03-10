@@ -170,6 +170,7 @@ nav ul li a{
         .mid-score img{
             width: 40px;
             margin-right: 20px;
+            bordar: #0000001a 1px solid;
         }
         .mid-result{
             font-size: 14px;
