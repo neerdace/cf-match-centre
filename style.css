@@ -4,7 +4,14 @@
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
 }
-nav{
+/*This section is for index html*/
+     body {
+            font-family: Poppins, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -13,13 +20,12 @@ nav{
     font-size: 24px;
     font-weight: 800;
     padding: 10px;
+    height: 40px;
+    margin-bottom: 30px;
 }
 nav div{
     background-color: #1E2945;
-}
- nav p{
-    background-color: #1E2945;
-    margin-left: -150px;
+    margin-left: -120px;
 }
 nav ul{
     display: flex;
@@ -41,13 +47,190 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
 }
+        .top-matchinfo{
+            display: flex;
+            align-items: center;
+            height: 250px;
+            width: auto;
+        }
+        .top-matchbox{ 
+            min-width:350px;
+            margin-right: 10px;
+            margin-left: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            color: #1E2945;
+        }
+      .match-box {
+            padding: 10px;
+            text-align: left;
+            font-size: 10px;
+            font-weight: 600;
+            border-radius: 8px 8px 0 0;
+            background-color: #cacaca;
+        }
+        .match-box span{
+            background-color: #cacaca;
+            font-size: 11px;
+        }
+    .live{
+        color: red;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+        .team {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .t20{
+            color: rgb(240, 12, 240);
+            font-weight: 800;
+            font-size: 12px;
+        }
+        .odi{
+            color: hsl(178 76% 46%);
+            font-weight: 800;
+            font-size: 12px;
+        }
+        .team img {
+            width: 40px;
+            height: 40px;
+            margin-right: 16px;
+        }
+
+        .team-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .score {
+            font-size: 16px;
+            font-weight: 700;
+            margin-left: auto;
+        }
+        .fixture{
+            font-size: 20px;
+            padding: 8px;
+            background-color: #b0abba;
+            color: #1E2945;
+            text-align: center;
+            font-weight: 500;
+        }
+        .upcoming{
+            font-size: 20px;
+            padding: 8px;
+            background-color: #b0abba;
+            color: #1E2945;
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .cf-matchcard-list{
+            border: 2px #1e2945 solid;
+            border-radius: 10px;
+            box-shadow: 2px 2px #00000062;
+            width: 95%;
+            display: flex;
+            margin: 13px auto;
+            padding: 5px;
+        }
+        .tour-section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            padding: 10px;
+            margin: auto 0;
+        }
+        .tour-section span{
+            font-size: 10px;
+            font-weight: 600;
+            text-align: left;
+        }
+        .tour-section img{
+            width: 50px;
+            padding: 5px;
+            border-radius: 50px;
+        }
+        .mid-team{
+            padding: 8px;
+            border-left: 1px #1e2945 solid;
+            border-right: 1px #1e2945 solid;
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        }
+        .mid-score{
+            display: flex;
+            align-items: center;
+            padding: 5px;
+        }
+        .mid-score img{
+            width: 40px;
+            margin-right: 20px;
+        }
+        .mid-result{
+            font-size: 14px;
+            font-weight: 400;
+            margin-left: 50px;
+            font-style: italic;
+        }
+        .card-team-name{
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .match-centre{
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .match-centre a{
+            border: #1e2945 2px solid;
+            text-decoration: none;
+            padding: 8px;
+            color: #1e2945;
+            font-weight: 500;
+            border-radius: 20px;
+
+        }
+        .month{
+            padding: 8px;
+            background-color: #1E2945;
+            color: #f5f5f5 ;
+            font-weight: 600;
+            text-align: center;
+            font-size: 18px;
+        }
+/*this is end of the index css*/
 .tabs {
     display: flex;
     margin: 20px;
     max-width: 800px;
     margin-left: 100px;
 }
-
+.month-tabs{
+    display: flex;
+    margin: 30px;
+    font-size: 24px;
+    max-width: 1000px;
+}
+.month-tab{
+    border: #1E2945 1px solid;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: #1E2945 2px 2px ;
+    height: 40px;
+    min-width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 12;
+    cursor: pointer;
+}
 .tab {
     flex: 1;
     text-align: center;
@@ -58,8 +241,10 @@ nav ul li a{
     border: 1px solid #ccc;
     max-width: 800px;
 }
-
-.tab-content {
+.month-tab-content{
+    display: none;
+}
+.tab-content{
     display: none;
     padding: 5px;
     background-color: #fff;
@@ -83,16 +268,6 @@ nav ul li a{
     height: 250px;
     margin: 8px;
 }
-.match-details{
-    width: 800px;
-    display: flex;
-    flex-direction: column;
-    margin:50px auto 40px 100px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    color: #1E2945;
-}
-
 .match-info {
     padding: 10px;
     display: flex;
@@ -102,17 +277,36 @@ nav ul li a{
     font-size: 12px;
     font-weight: bold;
 }
-.match-info, .match-info span, .match-info span a{
+.match-info, .match-info span a{
     text-decoration: none;
     background-color: beige;
     color: #1E2945;
+}
+.match-info span{
+    background-color: beige;
 }
 .live{
 color: red;
 font-size: 12px;
 font-weight: bold;
 }
-
+.match-no{
+    position: absolute;
+    font-size: 50px;
+    font-weight: 900;
+    background-color: transparent;
+    left:3%;
+    margin-top: -20px;
+    top:auto;
+    padding: 2px;
+    color: #1e2945;
+    opacity: 0.2;
+}
+.match-time{
+    position: absolute;
+    left: 67%;
+    margin-top: 40px;
+}
 .team {
     display: flex;
     align-items: center;
@@ -128,27 +322,37 @@ font-weight: bold;
 .team-name {
     font-size: 15px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
-.score {
+.score, .match-time {
     font-size: 20px;
     font-weight: 700;
     margin-left: auto;
 }
-
+.match-center{
+    max-width: 800px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: #00000062 2px 2px;
+}
 .overs{
     font-size: 14px;
     font-weight: 400;
     color: #302f2f;
     margin-right: 8px;
 }
+.lose{
+    opacity: 0.6;
+}
 .result {
     display: flex;
     justify-content: left;
     align-items: center;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
+    padding: 8px;
+    font-size: 11px;
+    font-weight: 500;
     background-color: #d3d3d3;
     border-bottom: green 5px solid;
     border-radius: 0 0 10px 10px;
@@ -164,6 +368,22 @@ font-weight: bold;
     background-color: #e8e6e6;
     border-bottom: green 5px solid;
     border-radius: 0 0 10px 10px;
+}
+.empty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.2;
+    text-transform: uppercase;
+    font-size: 100px;
+    min-height: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    border: #1E2945 1px solid;
+    box-shadow: #1e29458e 2px 2px;
+    font-weight: 900;
+    width: 80%;
+    margin: 30px auto;
 }
 table {
     max-width: 790px;
