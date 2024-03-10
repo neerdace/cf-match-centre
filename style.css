@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
+    overflow: hidden;
 }
 /*This section is for index html*/
      body {
