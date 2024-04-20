@@ -350,7 +350,7 @@ font-weight: bold;
 .mc-match-center{
     width: 100%;
     height: 480px;
-    background: linear-gradient(to bottom top,#1E2945, #1e2945ce), 
+    background: linear-gradient(to bottom,#1E2945, #1e2945ce), 
                         url('back-mc.jpg');
     background-repeat: no-repeat;
     background-size: cover;
