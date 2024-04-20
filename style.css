@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #fff;
+    background-color: transparent;
 }
 /*This section is for index html*/
      body {
@@ -24,26 +24,22 @@
     margin-bottom: 30px;
 }
 nav div{
-    background-color: #1E2945;
     margin-left: -120px;
 }
 nav ul{
     display: flex;
     justify-content: space-around;
-    background-color: #1E2945;
     font-size: 16px;
     font-weight: 500;
 }
 nav ul li{
     list-style: none;
-    background-color: #1E2945;
     letter-spacing: 1;
     margin-left: 40px;
     display: flex;
     justify-content: space-around;
 }
 nav ul li a{
-    background-color: #1E2945;
     text-decoration: none;
     color: #fff;
 }
@@ -57,16 +53,16 @@ nav ul li a{
             min-width:350px;
             margin-right: 10px;
             margin-left: 10px;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-            color: #1E2945;
+            color: rgb(0, 0, 0);
         }
       .match-box {
             padding: 10px;
             text-align: left;
             font-size: 10px;
             font-weight: 600;
-            border-radius: 8px 8px 0 0;
+            border-radius: 10px 10px 0 0;
             background-color: #cacaca;
         }
         .match-box span{
@@ -94,15 +90,11 @@ nav ul li a{
             font-weight: 800;
             font-size: 12px;
         }
-        .team img {
-            width: 40px;
-            height: 40px;
-            margin-right: 16px;
-        }
+        
 
         .team-name {
-            font-size: 18px;
-            font-weight: bold;
+            font-size: 20px;
+            font-weight: 500;
         }
 
         .score {
@@ -136,6 +128,9 @@ nav ul li a{
             margin: 13px auto;
             padding: 5px;
         }
+        .cf-matchcard-list:hover{
+            transform: scale(1.01);
+        }
         .tour-section{
             display: flex;
             flex-direction: column;
@@ -145,7 +140,7 @@ nav ul li a{
             margin: auto 0;
         }
         .tour-section span{
-            font-size: 10px;
+            font-size: 11px;
             font-weight: 600;
             text-align: left;
         }
@@ -169,7 +164,7 @@ nav ul li a{
         .mid-score img{
             width: 30px;
             margin-right: 20px;
-            border: #302f2f1c 1px solid;
+            border: #302f2f1c 2px solid;
         }
         .mid-result{
             font-size: 14px;
@@ -210,6 +205,16 @@ nav ul li a{
             justify-content: space-evenly;
         }
 /*this is end of the index css*/
+p{
+    position: absolute;
+    top: 150px;
+    left: 430px;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 1;
+    color: #564d03;
+  }
+
 .tabs {
     display: flex;
     margin: 20px;
@@ -262,6 +267,7 @@ nav ul li a{
 .active-tab {
     background-color: #1E2945;
     color: white;
+    transform: scale(1.1);
 }
 #inning1 {
     display: block;
@@ -271,24 +277,27 @@ nav ul li a{
     justify-content: left;
     align-items: center;
     height: 250px;
-    margin: 8px;
+    padding: 8px;
+    background-color: #1e294589;
 }
 .match-info {
-    padding: 10px;
+    padding: 30px;
     display: flex;
-    justify-content: space-between;
-    border-radius: 10px 10px 0 0;
-    text-align: left;
-    font-size: 12px;
-    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
 }
-.match-info, .match-info span a{
+.mc-time,.mc-detail,.mc-venue{
     text-decoration: none;
-    background-color: beige;
-    color: #1E2945;
+    font-size: 16px;
+    letter-spacing: 2;
+    color: #fff;
+    margin-bottom: 4px;
 }
-.match-info span{
-    background-color: beige;
+.mc-time,.mc-venue{
+    font-weight: 300;
+}
+.mc-detail{
+    font-weight: 600;
 }
 .live{
 color: red;
@@ -299,13 +308,16 @@ font-weight: bold;
     position: absolute;
     font-size: 50px;
     font-weight: 900;
-    background-color: transparent;
     left:3%;
     margin-top: -20px;
     top:auto;
     padding: 2px;
     color: #1e2945;
     opacity: 0.2;
+}
+.match-no:hover{
+    transform: scale(1.1);
+    opacity: 0.3;
 }
 .match-time{
     position: absolute;
@@ -319,9 +331,9 @@ font-weight: bold;
 }
 
 .team img {
-    width: 30px;
-    height: 30px;
+    width: 32px;
     margin-right: 10px;
+    border: #302f2f1c 1px solid;
 }
 
 .team-name {
@@ -335,12 +347,20 @@ font-weight: bold;
     font-weight: 700;
     margin-left: auto;
 }
-.match-center{
+.mc-match-center{
+    width: 100%;
+    height: 480px;
+    background: linear-gradient(to bottom right,#1E2945, #1e2945ce), 
+                        url('back-mc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -30px;
+}
+.mc-card{
     max-width: 800px;
-    margin-left: 100px;
-    margin-bottom: 50px;
-    border-radius: 10px;
-    box-shadow: #00000062 2px 2px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 .overs{
     font-size: 14px;
@@ -351,15 +371,20 @@ font-weight: bold;
 .lose{
     opacity: 0.6;
 }
+.final{
+
+}
+.final:hover{
+    transform: scale(1.1);
+}
 .result {
     display: flex;
     justify-content: left;
     align-items: center;
     padding: 8px;
-    font-size: 11px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
     background-color: #d3d3d3;
-    border-bottom: green 5px solid;
     border-radius: 0 0 10px 10px;
 }
 .post-result{
@@ -439,4 +464,106 @@ td, i{
     font-weight: 800;
     font-size: 18px;
     color: rgb(0, 0, 0);
+}
+.topbox{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.mc-team{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.mc-team img{
+    width: 50px;
+    margin-right: 10px;
+    align-items: center;
+}
+.mc-team-name{
+    font-size: 30px;
+    font-weight: 700;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    align-items: center;
+}
+.mc-score {
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: auto;
+    color: #fff;
+}
+.mc-overs,.mc-runs{
+    color: #fff;
+}
+.mc-team1{
+    border-bottom: 1px solid #e5e7eb;
+}
+.mc-result{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Popsins', sans-serif;
+    letter-spacing: 2;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+}
+.mc-footer{
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    padding-top: 14px;
+    max-width: 500px;
+}
+.mc-label{
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+}
+.player-wrapper{
+    width: 450px;
+    align-items: left;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+.player-info{
+    opacity: 0.8;
+    align-items: center;
+    display: flex;
+}
+.player-info img{
+    width: 40px;
+    align-items: center;
+}
+.pom-info{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    line-height: 1;
+}
+.pl-score{
+    color: #fff;
+    font-size: 14px;
+}
+em{
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.fname{
+    font-weight: 300;
+    font-size: 14px;
+}
+.lname{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
 }
