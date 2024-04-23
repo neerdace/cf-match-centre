@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav class="fixed">
-            <div class="nav-left"><a herf="/">CricFeed Nepal</a></div>
+            <div class="nav-left">CricFeed Nepal</div>
             <div class="nav-right">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -26,8 +26,9 @@
     </header>
     <!--last results start here-->
     <div class="fixture">This Month's Fixtures</div>
-    <div class="top-matchinfo">
-        <a href="uaevsnep2456.html" class="topbox"><div class="top-matchbox">
+    <div class="slider-container">
+    <div class="slider-content">
+        <a href="uaevsnep2456.html" class="topbox"><div class="slider-item">
             <div class="match-box">
                 <span class="results">Result</span>&nbsp;•&nbsp;
                 <span class="t20">T20I</span>&nbsp;•&nbsp;<span>Al Amerat Cricket Ground&nbsp;•&nbsp;Oman</span>
@@ -45,7 +46,7 @@
             
             <div class="result">U.A.E. won by 6 wickets</div>
         </div></a>
-        <div class="top-matchbox">
+        <div class="slider-item">
             <div class="match-box">
                 <span class="results">Result</span>&nbsp;•&nbsp;
                 <span class="t20">T20I</span>&nbsp;•&nbsp;<span>Al Amerat Cricket Ground&nbsp;•&nbsp;Oman</span>
@@ -62,7 +63,7 @@
             </div>
             <div class="result">Nepal won by 6 wickets</div>
         </div>
-        <div class="top-matchbox">
+        <div class="slider-item">
             <div class="match-box">
                 <span class="">Result</span>&nbsp;•&nbsp;
                 <span class="t20">T20I</span>&nbsp;•&nbsp;<span>Al Amerat Cricket Ground&nbsp;•&nbsp;Oman</span>
@@ -79,10 +80,54 @@
             </div>
             <div class="result">Nepal won by 8 wickets</div>
         </div>
-            
+
+        <div class="slider-item">
+            <div class="match-box">
+                <span class="">Result</span>&nbsp;•&nbsp;
+                <span class="t20">T20I</span>&nbsp;•&nbsp;<span>Al Amerat Cricket Ground&nbsp;•&nbsp;Oman</span>
+            </div>
+            <div class="team">
+                <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/319900/319958.png" alt="Team 1 Logo">
+                <div class="team-name">Nepal</div>
+                <div class="score"><span class="overs">(12.2)</span><span class="runs">117/2</span></div>
+            </div>
+            <div class="team lose">
+                <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/358500/358570.png" alt="Team 2 Logo">
+                <div class="team-name">Hong Kong, China</div>
+                <div class="score"><span class="overs">(17.5)</span><span class="runs">114</span></div>
+            </div>
+            <div class="result">Nepal won by 8 wickets</div>
+        </div>
+
+        <div class="slider-item">
+            <div class="match-box">
+                <span class="">Result</span>&nbsp;•&nbsp;
+                <span class="t20">T20I</span>&nbsp;•&nbsp;<span>Al Amerat Cricket Ground&nbsp;•&nbsp;Oman</span>
+            </div>
+            <div class="team">
+                <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/319900/319958.png" alt="Team 1 Logo">
+                <div class="team-name">Nepal</div>
+                <div class="score"><span class="overs">(12.2)</span><span class="runs">117/2</span></div>
+            </div>
+            <div class="team lose">
+                <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/358500/358570.png" alt="Team 2 Logo">
+                <div class="team-name">Hong Kong, China</div>
+                <div class="score"><span class="overs">(17.5)</span><span class="runs">114</span></div>
+            </div>
+            <div class="result">Nepal won by 8 wickets</div>
+        </div>
+        
                
         
     </div>
+
+    <!--Slider nav bar starts here-->
+
+        <div class="nav-button left" id="leftButton" onclick="slideLeft()">&#9664;</div>
+        <div class="nav-button right" id="rightButton" onclick="slideRight()">&#9654;</div>
+        <!--slider ber end here-->
+</div>
+    
         
         
           
@@ -92,8 +137,8 @@
 <div id="upcomming" class="upcoming">Upcoming Match</div>
 <!--Month tab starts here-->
 <div class="month-tabs">
-    <div id="month-tab1" class="month-tab active-tab" onclick="showTab('month1')">March</div>
-    <div id="month-tab2" class="month-tab" onclick="showTab('month2')">April</div>
+    <div id="month-tab1" class="month-tab" onclick="showTab('month1')">March</div>
+    <div id="month-tab2" class="month-tab active-month-tab" onclick="showTab('month2')">April</div>
     <div id="month-tab3" class="month-tab" onclick="showTab('month3')">May</div>
     <div id="month-tab4" class="month-tab" onclick="showTab('month4')">June</div>
 </div>
@@ -226,7 +271,7 @@
 </div>
 
 <!--Month change here-->
-<div id="month2" class="month-tab-content">
+<div id="month2" class="month-tab-content current">
     <div class="month">Fixtures Of This month</div>
 <div class="cf-matchcard-list">
     <div class="tour-section">
@@ -455,12 +500,56 @@
 
     var tabButtons = document.querySelectorAll('.month-tab');
     tabButtons.forEach(function(button) {
-        button.classList.remove('active-tab');
+        button.classList.remove('active-month-tab');
     });
 
     document.getElementById(tabId).style.display = 'block';
-    document.getElementById('month-tab' + tabId.charAt(tabId.length - 1)).classList.add('active-tab');
+    document.getElementById('month-tab' + tabId.charAt(tabId.length - 1)).classList.add('active-month-tab');
 }
+// Slider script starts here
+let currentSlide = 0;
+        const sliderContent = document.querySelector('.slider-content');
+        const totalSlides = document.querySelectorAll('.slider-item').length;
+        const leftButton = document.getElementById('leftButton');
+        const rightButton = document.getElementById('rightButton');
+
+        // Function to slide the content left
+        function slideLeft() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+
+        // Function to slide the content right
+        function slideRight() {
+            if (currentSlide < totalSlides - 4) {
+                currentSlide++;
+                updateSlide();
+            }
+        }
+
+        // Function to update the slide position and button visibility
+        function updateSlide() {
+            const slideWidth = document.querySelector('.slider-item').clientWidth;
+            sliderContent.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+
+            // Update navigation buttons visibility
+            if (currentSlide > 0) {
+                leftButton.classList.add('show');
+            } else {
+                leftButton.classList.remove('show');
+            }
+
+            if (currentSlide < totalSlides - 4) {
+                rightButton.classList.add('show');
+            } else {
+                rightButton.classList.remove('show');
+            }
+        }
+
+        // Initialize the slider
+        updateSlide();
 </script>
 
 </body>

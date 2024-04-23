@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #1E2945;
+    background-color: #00175F;
     color: #b0abba;
     font-size: 24px;
     font-weight: 800;
@@ -43,26 +43,43 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
 }
-        .top-matchinfo{
+
+.slider-container{
+    overflow: hidden; /* Hide overflow content */
+    position: relative;
+}
+
+.si-lable::before{
+    content: "";
+}
+
+        .slider-content{
             display: flex;
             align-items: center;
+            transition: transform 0.3s ease;
             height: 250px;
+            padding-left: 15px;
             width: auto;
+            
         }
-        .top-matchbox{ 
-            min-width:350px;
+        .slider-item{ 
+            min-width:350px; /* Width of each item */
             margin-right: 10px;
             margin-left: 10px;
-            border-radius: 10px;
+            border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
             color: rgb(0, 0, 0);
+
+            background-color: #f3f3f3;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
         }
       .match-box {
             padding: 10px;
             text-align: left;
             font-size: 10px;
             font-weight: 600;
-            border-radius: 10px 10px 0 0;
+            border-radius: 5px 5px 0 0;
             background-color: #cacaca;
         }
         .match-box span{
@@ -106,7 +123,7 @@ nav ul li a{
             font-size: 20px;
             padding: 8px;
             background-color: #b0abba;
-            color: #1E2945;
+            color: #00175F;
             text-align: center;
             font-weight: 500;
         }
@@ -114,13 +131,13 @@ nav ul li a{
             font-size: 20px;
             padding: 8px;
             background-color: #b0abba;
-            color: #1E2945;
+            color: #00175F;
             text-align: center;
             font-weight: 500;
             margin-bottom: 20px;
         }
         .cf-matchcard-list{
-            border: 2px #1e2945 solid;
+            border: 2px #00175F solid;
             border-radius: 10px;
             box-shadow: 2px 2px #00000062;
             width: 95%;
@@ -150,8 +167,8 @@ nav ul li a{
         }
         .mid-team{
             padding: 8px;
-            border-left: 1px #1e2945 solid;
-            border-right: 1px #1e2945 solid;
+            border-left: 1px #00175F solid;
+            border-right: 1px #00175F solid;
             display: flex;
             flex-direction: column;
             width: 40%;
@@ -184,17 +201,17 @@ nav ul li a{
             margin: 0 auto;
         }
         .match-centre a{
-            border: #1e2945 2px solid;
+            border: #00175F 2px solid;
             text-decoration: none;
             padding: 8px;
-            color: #1e2945;
+            color: #00175F;
             font-weight: 500;
             border-radius: 20px;
 
         }
         .month{
             padding: 8px;
-            background-color: #1E2945;
+            background-color: #00175F;
             color: #f5f5f5 ;
             font-weight: 600;
             text-align: center;
@@ -205,21 +222,11 @@ nav ul li a{
             justify-content: space-evenly;
         }
 /*this is end of the index css*/
-p{
-    position: absolute;
-    top: 150px;
-    left: 430px;
-    font-size: 28px;
-    font-weight: 800;
-    letter-spacing: 1;
-    color: #564d03;
-  }
 
-.tabs {
+.tabs{
     display: flex;
     margin: 20px;
-    max-width: 800px;
-    margin-left: 100px;
+    width: 1200px;
 }
 .month-tabs{
     display: flex;
@@ -228,11 +235,11 @@ p{
     max-width: 1000px;
 }
 .month-tab{
-    border: #1E2945 1px solid;
+    border: #00175F 1px solid;
     padding: 5px;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: #1E2945 2px 2px ;
+    box-shadow: #00175F 2px 2px ;
     height: 40px;
     min-width: 80px;
     display: flex;
@@ -246,10 +253,9 @@ p{
     text-align: center;
     padding: 10px;
     cursor: pointer;
-    background-color: #1e294586;
-    color: white;
-    border: 1px solid #ccc;
-    max-width: 800px;
+    color: #00175F;
+    max-width: 500px;
+    font-weight: 500;
 }
 .month-tab-content{
     display: none;
@@ -265,9 +271,8 @@ p{
     margin-left: 100px;
 }
 .active-tab {
-    background-color: #1E2945;
+    background-color: #00175F;
     color: white;
-    transform: scale(1.1);
 }
 #inning1 {
     display: block;
@@ -278,7 +283,7 @@ p{
     align-items: center;
     height: 250px;
     padding: 8px;
-    background-color: #1e294589;
+    background-color: #00175F89;
 }
 .match-info {
     padding: 30px;
@@ -312,7 +317,7 @@ font-weight: bold;
     margin-top: -20px;
     top:auto;
     padding: 2px;
-    color: #1e2945;
+    color: #00175F;
     opacity: 0.2;
 }
 .match-no:hover{
@@ -350,14 +355,14 @@ font-weight: bold;
 .mc-match-center{
     width: 100%;
     height: 480px;
-    background: linear-gradient(to bottom,#1E2945, #1e2945ce), 
-                        url('back-mc.jpg');
+    background: linear-gradient(to top,#00185feb, #090d3feb), 
+                        url('mc-back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -30px;
 }
 .mc-card{
-    max-width: 800px;
+    max-width: 750px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -381,11 +386,11 @@ font-weight: bold;
     display: flex;
     justify-content: left;
     align-items: center;
-    padding: 8px;
+    padding: 5px;
     font-size: 12px;
     font-weight: 600;
     background-color: #d3d3d3;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 5px 5px;
 }
 .post-result{
     color: rgb(2, 52, 2);
@@ -399,25 +404,9 @@ font-weight: bold;
     border-bottom: green 5px solid;
     border-radius: 0 0 10px 10px;
 }
-.empty{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.2;
-    text-transform: uppercase;
-    font-size: 100px;
-    min-height: 300px;
-    padding: 20px;
-    border-radius: 20px;
-    border: #1E2945 1px solid;
-    box-shadow: #1e29458e 2px 2px;
-    font-weight: 900;
-    width: 80%;
-    margin: 30px auto;
-}
 table {
     max-width: 790px;
-    background-color: #1E2945;
+    background-color: #00175F;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -431,7 +420,7 @@ th, td {
 }
 
 th {
-    background-color: #1E2945;
+    background-color: #00175F;
     color: white;
 }
 .table-gap{
@@ -473,30 +462,30 @@ td, i{
 .mc-team{
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    padding-top: 15px;
     padding-bottom: 15px;
-    font-family: 'Poppins', sans-serif;
 }
 .mc-team img{
     width: 50px;
+    max-height: 28px;
     margin-right: 10px;
-    align-items: center;
 }
 .mc-team-name{
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 34px;
+    font-weight: 800;
     align-items: center;
     color: #fff;
     text-transform: uppercase;
-    align-items: center;
+    font-family: 'Montserrat', sans-serif;
 }
 .mc-score {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     margin-left: auto;
     color: #fff;
 }
 .mc-overs,.mc-runs{
+    font-family: "Montserrat", sans-serif;
     color: #fff;
 }
 .mc-team1{
@@ -505,8 +494,8 @@ td, i{
 .mc-result{
     color: #fff;
     font-size: 14px;
-    font-weight: 300;
-    font-family: 'Popsins', sans-serif;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
     letter-spacing: 2;
     padding-bottom: 30px;
     border-bottom: 1px solid #fff;
@@ -514,20 +503,21 @@ td, i{
 .mc-footer{
     display: flex;
     flex-direction: column;
-    margin-inline: auto;
+    margin: auto;
     padding-top: 14px;
-    max-width: 500px;
+    max-width: 400px;
 }
 .mc-label{
     font-size: 14px;
     font-weight: 800;
     text-transform: uppercase;
     color: #fff;
+    margin-bottom: 8px;
 }
 .player-wrapper{
-    width: 450px;
+    width: 350px;
     align-items: left;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #afb0b113;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -566,4 +556,73 @@ em{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 16px;
+}
+.mc-runs{
+    font-size: 20px;
+    margin-right: 8px;
+}
+.mc-scoreboard{
+    width: 100%;
+    padding: 30px;
+
+}
+.current{
+    display: block;
+}
+/*this is no schedule style*/
+.empty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.2;
+    text-transform: uppercase;
+    font-size: 100px;
+    min-height: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    border: #1E2945 1px solid;
+    box-shadow: #1e29458e 2px 2px;
+    font-weight: 900;
+    width: 80%;
+    margin: 30px auto;
+}
+.active-tab::after{
+    content: '';
+    width: 0;
+    bottom: -44px;
+    left: -55px;
+    position: relative;
+    border: 10px solid rgba(0, 0, 0, 0);
+    border-top: 10px solid #00175F;
+}
+.active-month-tab{
+    background-color: #00175F;
+    color: #fff;
+}
+/* Navigation buttons */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #7e7e7e;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    opacity: 0.4;
+    display: none;
+
+}
+.nav-button.show{
+    display: block;
+}
+.nav-button.left {
+    left: 0;
+}
+
+.nav-button.right {
+    right: 0;
+}
+
+.nav-button.left:hover, .nav-button.right:hover{
+    opacity: 0.8;
 }
