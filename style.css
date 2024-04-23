@@ -321,7 +321,7 @@ font-weight: bold;
     opacity: 0.2;
 }
 .match-no:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
     opacity: 0.3;
 }
 .match-time{
@@ -380,7 +380,7 @@ font-weight: bold;
 
 }
 .final:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 .result {
     display: flex;
