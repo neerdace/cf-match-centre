@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Streaming Example</title>
+    <style>
+        body{
+            background-color: #141010;
+            color: #fff;
+            font-family: sans-serif;
+        }
+        /* Styles for the container */
+        .stream-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Style for each video player */
+        .stream-player {
+            border: 1px solid #454343;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            text-align: center;
+            
+        }
+        iframe{
+            width: 950px;
+            height: 535px;
+        }
+        p{
+            font-size: 10px;
+            color: #454343;
+        }
+    </style>
+</head>
+<body>
+    <h1>IPL 2024</h1>
+    <div class="stream-container">
+        <div class="stream-player">
+            <p>This video is embedded using a frame from a third party source - https://streambtw.com.
+                All video content found on the this site has never been and is not hosted on our servers, not is it created or uploaded by us.
+                The website is not responsible for the content of an external site. If you find that some content violates your rights, 
+                you may request removal of that content from the host responsible for the content.
+                This guarantees the removal of content from the this site and other search engines that could index this content.</p>
+                <iframe src="https://streambtw.com/iframe/e1.php" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code can be added here if needed
+    </script>
+</body>
+</html>
