@@ -1,0 +1,655 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Canada Vs Nepal</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">CricFeed Nepal</div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Live Match</a></li>
+                    <li><a href="#upcomming">Fixtures</a></li>
+                    <li><a href="">Results</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="mc-match-center">
+        <div class="mc-card">
+            <div class="match-info">
+                <div class="mc-time">Monday, 27 May 2024, 21:15</div>
+                <div class="mc-detail">ICC Men's Worldcup- Warmup match, 2024</div>
+                <div class="mc-venue">Grand Prairie Cricket Stadium, Dallas, USA</div>
+            </div>
+            <div class="mc-team mc-team1">
+                <img src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/12.png" alt="Team 1 Logo">
+                <span class="mc-team-name">Canada</span>
+                <div class="mc-score"><span class="mc-runs"></span><span class="mc-overs"></span></div>
+            </div>
+            <div class="mc-team mc-team2">
+                <img src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/637.png?v=7"
+                    alt="Team 2 Logo">
+                <div class="mc-team-name">NEPAL</div>
+                <div class="mc-score"><span class="mc-runs"></span><span class="mc-overs"></span></div>
+            </div>
+            <!-- Display the countdown timer in an element -->
+            <div class="time">
+                <p>Match Starts In:</p>
+            <p id="demo"></p>
+            </div>
+            <!--<div class="mc-result">United Arab Emirates beat Nepal by 6 wickets</div>
+            <div class="mc-footer">
+                <span class="mc-label">Player Of The Match</span>
+                <div class="player-wrapper">
+                    <div class="player-info">
+                        <img src="playerimg.png" alt="player photo">
+                        <span class="pom-info">
+                            <span class="fname">Alisan</span><span class="lname">Sharafu</span>
+                    </div>
+                    <div class="pl-score cf-font-bold">55<em>(41)</em></div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+    <div class="si-tabs">
+        <div id="si-tab1" class="si-tab active-si-tab" onclick="showTab('si-scoreboard')">Scoreboard</div>
+        <div id="si-tab2" class="si-tab" onclick="showTab('si-detail')">Match Details</div>
+    </div>
+    <!--<div class="mc-scoreboard">
+        <div id="si-scoreboard" class="si-tab-content">
+            <div class="tabs">
+                <div id="tab1" class="tab active-tab" onclick="showTab('inning1')">1st Inning</div>
+                <div id="tab2" class="tab" onclick="showTab('inning2')">2nd Inning</div>
+            </div>
+            <div id="inning1" class="tab-content">
+                <div class="batting-table">
+                    <div class="si-label">
+                        <img src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/637.png?v=7"
+                            alt="Team1 Flag">
+                        <span class="si-text">Nepal</span>
+                    </div>
+                    <table class="table-gap batting">
+                        <thead>
+                            <tr>
+                                <th width="30%">Batting</th>
+                                <th>&nbsp;</th>
+                                <th>R</th>
+                                <th>B</th>
+                                <th>4s</th>
+                                <th>6s</th>
+                                <th>SR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-data">Michael Van Lingen</td>
+                                <td class="table-data"><i>c Gulshan Jha b Karan KC</i></td>
+                                <td class="cf-font-bold">20</td>
+                                <td>19</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>105.26</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Malan Kruger</td>
+                                <!--Aasif Sheikh †
+                                <td class="table-data"><i>c de Leede b Kingma</i></td>
+                                <td class="cf-font-bold">17</td>
+                                <td>27</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>62.96</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Anil Sah</td>
+                                <td class="table-data"><i>b Kingma</i></td>
+                                <td class="cf-font-bold">7</td>
+                                <td>11</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>63.63</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Kushal Malla</td>
+                                <td class="table-data"><i>lbw b Dutt</i></td>
+                                <td class="cf-font-bold">2</td>
+                                <td>9</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>22.22</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Rohit Poudel (c)</td>
+                                <td class="table-data"><i>c Croes</i></td>
+                                <td class="cf-font-bold">16</td>
+                                <td>40</td>
+                                <td>2</td>
+                                <td>0</td>
+                                <td>40.0</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Dipendra Shingh Airee</td>
+                                <td class="table-data"><i>runout (de Leede)</i></td>
+                                <td class="cf-font-bold">1</td>
+                                <td>11</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>9.09</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Bhim Sharki</td>
+                                <td class="table-data"><i>b Bas de Leede</i></td>
+                                <td class="cf-font-bold">0</td>
+                                <td>8</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0.0</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Aarif Sheikh</td>
+                                <td class="table-data"><i>c O'Dowd b Kingma</i></td>
+                                <td class="cf-font-bold">5</td>
+                                <td>17</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>29.41</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Gulshan Jha</td>
+                                <td class="table-data"><i>c Engelbrecht b Dutt</i></td>
+                                <td class="cf-font-bold">5</td>
+                                <td>17</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>29.41</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Karan KC</td>
+                                <td class="table-data"><i>c Engelbrecht b de Leede</i></td>
+                                <td class="cf-font-bold">5</td>
+                                <td>17</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>29.41</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Lalit Rajbanshi*</td>
+                                <td class="table-data"><i>not out</i></td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="table-data" width="30%">Extras</td>
+                                <td class="extra-details table-data">(b 0, lb 1, nb 0, w 9 )</td>
+                                <td class="cf-font-bold">10</td>
+
+                            </tr>
+                            <!-- Add more rows for other batsmen --
+                        </tbody>
+                    </table>
+                    <table class="si-total">
+                        <tbody>
+                            <tr>
+                                <td class="table-data" width="30%">Total</td>
+                                <td class="extra-details table-data">20.0 overs</td>
+                                <td class="cf-font-bold">119</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="si-team-scorecard">
+                        <div class="si-bowling">
+                            <div class="si-label">
+                                <img src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/637.png?v=7"
+                                    alt="Team1 Flag">
+                                <span class="si-text">Nepal</span>
+                            </div>
+                            <table class="table-gap bowling-table">
+                                <thead>
+                                    <tr>
+                                        <th class="table-data" width="55%">Bowling</th>
+                                        <th>O</th>
+                                        <th>M</th>
+                                        <th>R</th>
+                                        <th>W</th>
+                                        <th>ECON</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="table-data">Vivian Kingma</td>
+                                        <td>6</td>
+                                        <td>0</td>
+                                        <td>23</td>
+                                        <td class="cf-font-bold">2</td>
+                                        <td>3.83</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-data">Roelof van der Merwe</td>
+                                        <td>9</td>
+                                        <td>1</td>
+                                        <td>21</td>
+                                        <td class="cf-font-bold">1</td>
+                                        <td>2.33</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-data">Vikramjit Singh</td>
+                                        <td>9</td>
+                                        <td>1</td>
+                                        <td>21</td>
+                                        <td class="cf-font-bold">1</td>
+                                        <td>2.33</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-data">Aryan Dutt</td>
+                                        <td>9</td>
+                                        <td>1</td>
+                                        <td>21</td>
+                                        <td class="cf-font-bold">1</td>
+                                        <td>2.33</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-data">Max O'Dowd</td>
+                                        <td>9</td>
+                                        <td>1</td>
+                                        <td>21</td>
+                                        <td class="cf-font-bold">1</td>
+                                        <td>2.33</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-data">Bas de Leede</td>
+                                        <td>9</td>
+                                        <td>1</td>
+                                        <td>21</td>
+                                        <td class="cf-font-bold">1</td>
+                                        <td>2.33</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-data">Michael Levitt</td>
+                                        <td>9</td>
+                                        <td>1</td>
+                                        <td>21</td>
+                                        <td class="cf-font-bold">1</td>
+                                        <td>2.33</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <div class="si-wicketsfall">
+                            <div class="si-label">
+                                <img src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/637.png?v=7"
+                                    alt="Team1 Flag">
+                                <span class="si-text">Nepal</span>
+                            </div>
+                            <div class="table-head">
+                                <span>Fall Of Wickets</span>
+                                <span>overs</span>
+                            </div>
+                            <div class="table-row">
+                                <span class="start">42/1</span>
+                                <span class="wckt-data">Aasif Sheikh</span>
+                                <span class="end">8.3</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="inning2" class="tab-content">
+                <div class="batting-table">
+                    <div class="si-label">
+                        <img src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/637.png?v=7"
+                            alt="Team1 Flag">
+                        <span class="si-text">Nepal</span>
+                    </div>
+                    <table class="table-gap">
+                        <thead>
+                            <tr>
+                                <th class="table-data" width="30%">Netherlands Batting</th>
+                                <th>&nbsp;</th>
+                                <th>R</th>
+                                <th>B</th>
+                                <th>4s</th>
+                                <th>6s</th>
+                                <th>SR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-data">Kushal Bhurtel</td>
+                                <td class="table-data"><i>c&b van der Merwe</i></td>
+                                <td class="cf-font-bold">66</td>
+                                <td>93</td>
+                                <td>8</td>
+                                <td>0</td>
+                                <td>70.96</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Aasif Sheikh †</td>
+                                <td class="table-data"><i>c de Leede b Kingma</i></td>
+                                <td class="cf-font-bold">17</td>
+                                <td>27</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>62.96</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Anil Sah</td>
+                                <td class="table-data"><i>b Kingma</i></td>
+                                <td class="cf-font-bold">7</td>
+                                <td>11</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>63.63</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Kushal Malla</td>
+                                <td class="table-data"><i>lbw b Dutt</i></td>
+                                <td class="cf-font-bold">2</td>
+                                <td>9</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>22.22</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Rohit Poudel (c)</td>
+                                <td class="table-data"><i>c Croes</i></td>
+                                <td class="cf-font-bold">16</td>
+                                <td>40</td>
+                                <td>2</td>
+                                <td>0</td>
+                                <td>40.0</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Dipendra Shingh Airee</td>
+                                <td class="table-data"><i>runout (de Leede)</i></td>
+                                <td class="cf-font-bold">1</td>
+                                <td>11</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>9.09</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Bhim Sharki</td>
+                                <td class="table-data"><i>b Bas de Leede</i></td>
+                                <td class="cf-font-bold">0</td>
+                                <td>8</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0.0</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Aarif Sheikh</td>
+                                <td class="table-data"><i>c O'Dowd b Kingma</i></td>
+                                <td class="cf-font-bold">5</td>
+                                <td>17</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>29.41</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Gulshan Jha</td>
+                                <td class="table-data"><i>c Engelbrecht b Dutt</i></td>
+                                <td class="cf-font-bold">5</td>
+                                <td>17</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>29.41</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Karan KC</td>
+                                <td class="table-data"><i>c Engelbrecht b de Leede</i></td>
+                                <td class="cf-font-bold">5</td>
+                                <td>17</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>29.41</td>
+                            </tr>
+                            <tr>
+                                <td class="table-data">Lalit Rajbanshi*</td>
+                                <td class="table-data"><i>not out</i></td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <!-- Add more rows for other batsmen --
+                        </tbody>
+                    </table>
+                    <table class="table-gap">
+                        <tbody>
+                            <tr>
+                                <td width="30%">Extras</td>
+                                <td class="extra-details">(b 0, lb 1, nb 0, w 9 )</td>
+                                <td class="cf-font-bold">10</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table-gap">
+                        <thead>
+                            <th>Fall Of Wickets</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 1-42 (Aasif Sheikh, 8.3 ov), 2-50 (Anil Sah, 10.6 ov), 3-54 (Kushal Malla, 12.6
+                                    ov), 4-87 (Rohit Paudel, 24.3 ov), 5-93 (Dipendra Singh Airee, 27.4 ov), 6-94 (Bhim
+                                    Sharki, 29.3 ov), 7-122 (Kushal Bhurtel, 36.3 ov), 8-135 (Gulsan Jha, 42.2 ov)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table-gap">
+                        <thead>
+                            <tr>
+                                <th width="30%">Bowling</th>
+                                <th>O</th>
+                                <th>M</th>
+                                <th>R</th>
+                                <th>W</th>
+                                <th>ECON</th>
+                                <th>WD</th>
+                                <th>NB</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Vivian Kingma</td>
+                                <td>6</td>
+                                <td>0</td>
+                                <td>23</td>
+                                <td class="cf-font-bold">2</td>
+                                <td>3.83</td>
+                                <td>2</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Roelof van der Merwe</td>
+                                <td>9</td>
+                                <td>1</td>
+                                <td>21</td>
+                                <td class="cf-font-bold">1</td>
+                                <td>2.33</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Vikramjit Singh</td>
+                                <td>9</td>
+                                <td>1</td>
+                                <td>21</td>
+                                <td class="cf-font-bold">1</td>
+                                <td>2.33</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Aryan Dutt</td>
+                                <td>9</td>
+                                <td>1</td>
+                                <td>21</td>
+                                <td class="cf-font-bold">1</td>
+                                <td>2.33</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Max O'Dowd</td>
+                                <td>9</td>
+                                <td>1</td>
+                                <td>21</td>
+                                <td class="cf-font-bold">1</td>
+                                <td>2.33</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Bas de Leede</td>
+                                <td>9</td>
+                                <td>1</td>
+                                <td>21</td>
+                                <td class="cf-font-bold">1</td>
+                                <td>2.33</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Michael Levitt</td>
+                                <td>9</td>
+                                <td>1</td>
+                                <td>21</td>
+                                <td class="cf-font-bold">1</td>
+                                <td>2.33</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>-->
+        <div id="si-detail" class="si-tab-content">
+            <h3>Match Info</h3>
+            <table class="table-gap">
+                <tbody>
+                    <tr>
+                        <td class="cf-font-bold">Toss</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="cf-font-bold">Series</td>
+                        <td>ICC Men's Cricket World Cup Warmup Match 2024</td>
+                    </tr>
+                    <tr>
+                        <td class="cf-font-bold">Season</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td class="cf-font-bold">Format</td>
+                        <td>T20</td>
+                    </tr>
+                    <tr>
+                        <td class="cf-font-bold">Venue</td>
+                        <td>Grand Prairie Cricket Stadium, Dallas</td>
+                    </tr>
+                    <tr>
+                        <td class="cf-font-bold">Umpires</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="cf-font-bold">Match Referee</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="cf-font-bold">Match Date</td>
+                        <td>May 27, 2024</td>
+                    </tr>
+                    <!--<tr>
+        <td class="cf-font-bold">Player of the Match</td>
+        <td>Bernard Scholtz</td>
+    </tr>-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 27, 2024 21:15").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "";
+            }
+        }, 1000);
+
+        function showTab(tabId) {
+            var tabs = document.querySelectorAll('.si-tab-content');
+            tabs.forEach(function (tab) {
+                tab.style.display = 'none';
+            });
+
+            var tabButtons = document.querySelectorAll('.si-tab');
+            tabButtons.forEach(function (button) {
+                button.classList.remove('active-si-tab');
+            });
+
+            document.getElementById(tabId).style.display = 'block';
+            document.getElementById('si-tab' + tabId.charAt(tabId.length - 1)).classList.add('active-si-tab');
+        }
+
+        function showTab(tabId) {
+            var tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(function (tab) {
+                tab.style.display = 'none';
+            });
+
+            var tabButtons = document.querySelectorAll('.tab');
+            tabButtons.forEach(function (button) {
+                button.classList.remove('active-tab');
+            });
+
+            document.getElementById(tabId).style.display = 'block';
+            document.getElementById('tab' + tabId.charAt(tabId.length - 1)).classList.add('active-tab');
+        }
+
+    </script>
+
+</body>
+
+</html>
